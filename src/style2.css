@@ -1,0 +1,39 @@
+.progress {
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--n)/var(--tw-bg-opacity));
+    content: "";
+    width: 33.3333%;
+    border-radius: var(--rounded-box,1rem);
+    animation: progress-loading 5s ease-in-out infinite;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -40%;
+}
+
+@keyframes progress-loading {
+    0% {
+        left: -80px;
+    }
+    20%{
+        left:0px;
+    }
+    50%{
+        left: 50%;
+    }
+    75%{
+        left:100%;
+    }
+    100%{
+        left:-80px;
+    }
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 48
+}
